@@ -1,0 +1,14 @@
+@import url(styles.css);
+
+.grid-explicita {
+    display: grid;
+    /* Grid de 3c x 3r */
+    grid-template-columns: 85px 160px 30%;
+    grid-template-rows: 200px 100px 1fr;
+    /* Grid 5c x 4r */
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(5, 20%);
+    grid-template-columns: 20% repeat(2, 30%) 20%;
+    grid-template-rows: repeat(3, 30%) repeat(2,20%);
+    gap: 10px 20px;
+}

@@ -1,0 +1,39 @@
+@import url(styles.css);
+
+.grid-con-lineas {
+    display: grid;
+    grid-template-columns: 20% repeat(2, 30%) 20%;
+    grid-template-rows: repeat(5, auto);
+}
+
+.grid-con-lineas .item:nth-child(10) {
+    background-color: brown;
+    color: #fff;
+    grid-column-start: 2;
+    grid-column-end: 4;    
+    grid-row-start: 2;
+    grid-row-end: 4;
+    /* Shorthand
+    grid-row: grid-row-star / grid-row-end
+    grid-column: grid-column-start / grid-column-end
+    */
+    grid-row: 2 / 4;
+    grid-column: 2 / 5;
+
+    /* Shorthand */
+    grid-area: 2 / 2 / 4 / 5  ;
+}
+
+.grid-con-lineas .item:nth-child(2) {
+    background-color: steelblue;
+    color: #fff;
+    grid-area: 1 / 1 / 2 / 5  ;
+}
+
+.grid-con-lineas .item:nth-child(9) {
+    background-color: violet;
+    color: #fff;
+    grid-row: 5 / span 3;
+    grid-column: 2 / 3;
+}
+
