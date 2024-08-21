@@ -1,0 +1,9 @@
+@import url(styles.css);
+
+.grid-implicita {
+    display: grid;
+    /* Grid de 4c x 3r */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    /* gap: 10px 20px; */
+}
