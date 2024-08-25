@@ -1,0 +1,27 @@
+@import url(styles.css);
+
+.grid-aling {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 200px);
+
+    justify-items: stretch;
+    /* justify-items: end;
+    justify-items: start;
+    justify-items: center; */
+
+    align-items: stretch;
+    align-items: end;
+    align-items: start;
+    align-items: center;
+}
+
+.grid-aling .item:nth-child(2) {
+    /* display: flex; */
+    background-color: blueviolet;
+    color: aliceblue;
+    /* align-items: center;
+    justify-content: center; */
+    align-self: center;
+    justify-self: center;
+}
